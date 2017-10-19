@@ -1,0 +1,35 @@
+extends ./layout.jade
+block contenido
+    div(class="banner")
+        div(class="se-pre-con")
+        div(id="kb" class="carousel kb_elastic animate_text kb_wrapper" data-ride="carousel" data-interval="6000" data-pause="hover")
+                div(class="carousel-inner" role="listbox")
+                    div(class="item active")
+                        img(src="images/banner_contacto.jpg" alt="" class="img-responsive")
+                        div(class="carousel-caption kb_caption kb_caption_center")
+                            h3(data-animation="animated flipInX")|Contáctanos
+    div(class="contact-agile" id="contact")
+        div(class="container")
+            div(class="w3_tittle second")
+                h3(class="agile-tittle two")|Contáctanos
+                div(class="line-style second")
+                    span(class="second")
+            div(class="contact-left")
+                h4|Ubícanos
+                p|Dirección
+                p|Distrito, Departameno - Perú
+                h4|Llámanos
+                p|+(051) 912 123 456
+            div(class="contact-middle")
+                h4|Escríbenos
+                form(action="#" method="post")
+                    div(class="form-agileinfo")
+                        p|Nombres
+                        input(type="text" name="your name" placeholder="Tú nombre" required="")
+                        p|Correo Electrónico
+                        input(type="email" name="your email" placeholder="example@dominio.com" required="")
+                    div(class="form-agileits-w3layouts")
+                        p|Mensaje
+                        textarea(name="your message" placeholder="Tú mensaje" required="")
+                        input(type="submit"   value="Enviar Mensaje")
+                    div(class="clearfix")

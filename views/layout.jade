@@ -1,0 +1,208 @@
+doctype html
+html(lang="en")
+  head
+    title Wayra Control
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+    meta(name="keywords" content="Dazzling Birds Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design")
+    link(href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all")
+    link(rel="stylesheet" href="css/lightbox.css")
+    link(href="css/style.css" rel="stylesheet" type="text/css" media="all")
+    link(rel="stylesheet" href="css/ken-burns.css" type="text/css" media="all")
+    link(href="css/font-awesome.css" rel="stylesheet")
+    link(href="//fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i" rel="stylesheet")
+    link(href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css')
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/style_nav.css")
+    script(src="js/modernizr.js")
+  body
+    block contenido
+    header
+        nav(id="nav-bar-wayra" class="cd-stretchy-nav nav-is-visible")
+            a(class="cd-nav-trigger" href="#0")
+                span(aria-hidden="true")
+            ul
+                li
+                    a(href="/")
+                        span(class="nav-wayra")|Principal
+                li
+                    a(href="/servicios")
+                        span(class="nav-wayra")|Servicios
+                li
+                    a(href="/galeria")
+                        span(class="nav-wayra")|Galería
+                li
+                    a(href="/contact")
+                        span(class="nav-wayra")|Contácto
+            span(aria-hidden="true" class="stretchy-nav-bg")
+    div(style="margin-top:-10px;" class="header-bottom-static")
+        div(class="logo")
+            a(class="navbar-brand" href="/")
+                img(class="img-responsive logo_wayra" src="images/logo.png")
+    div(class="footer")
+        div(class="container")
+            div(class="col-md-3 w3agile_footer_grid")
+                h3|Wayra Control
+                p|Presentacion resumida para publico
+                h2
+                    a(href="/")|Página principal
+            div(class="col-md-2 w3agile_footer_grid")
+                h3|Páginas
+                ul
+                    li
+                        a(href="/servicios")|Servicios
+                    li
+                        a(href="/galeria")|Galería
+                    li
+                        a(href="/contact")|Contáctanos
+            div(class="col-md-4 w3agile_footer_grid")
+                h3|Servicios
+                    h2
+                        a(href="index.html")|CONTROL AVIAR
+                    h2
+                        a(href="index.html")|EXHIBICIÓNES EN EVENTOS
+                    h2
+                        a(href="index.html")|ESPECTÁCULOS AVIARES
+            div(class="col-md-3 w3agile_footer_grid")
+                h3|GALERÍA
+                div(class="w3agile_footer_grid_left")
+                    a(href="#" data-toggle="modal" data-target="#myModal")
+                        img(src="images/g1.jpg" alt=" " class="img-responsive")
+                div(class="w3agile_footer_grid_left")
+                    a(href="#" data-toggle="modal" data-target="#myModal")
+                        img(src="images/g2.jpg" alt=" " class="img-responsive")
+                div(class="w3agile_footer_grid_left")
+                    a(href="#" data-toggle="modal" data-target="#myModal")
+                        img(src="images/g3.jpg" alt=" " class="img-responsive")
+                div(class="w3agile_footer_grid_left")
+                    a(href="#" data-toggle="modal" data-target="#myModal")
+                        img(src="images/g4.jpg" alt=" " class="img-responsive")
+                div(class="w3agile_footer_grid_left")
+                    a(href="#" data-toggle="modal" data-target="#myModal")
+                        img(src="images/g5.jpg" alt=" " class="img-responsive")
+                div(class="w3agile_footer_grid_left")
+                    a(href="#" data-toggle="modal" data-target="#myModal")
+                        img(src="images/g1.jpg" alt=" " class="img-responsive")
+                div(class="w3agile_footer_grid_left")
+                    a(href="#" data-toggle="modal" data-target="#myModal")
+                        img(src="images/g2.jpg" alt=" " class="img-responsive")
+                div(class="w3agile_footer_grid_left")
+                    a(href="#" data-toggle="modal" data-target="#myModal")
+                        img(src="images/g3.jpg" alt=" " class="img-responsive")
+                div(class="w3agile_footer_grid_left")
+                    a(href="#" data-toggle="modal" data-target="#myModal")
+                        img(src="images/g4.jpg" alt=" " class="img-responsive")
+    div(class="agileinfo_copy_right")
+        div(class="container")
+            div(class="agileinfo_copy_right_left")
+                p|© 2017 Wayra Control. Todos los derechos reservados. | Desarrollado por 
+                    a(href="https://plus.google.com/u/0/+AlexsandreV%C3%A1squez")|Alexsandre Vásquez
+            div(class="agileinfo_copy_right_right w3l_header_right")
+                ul(class="social-bnr-agileits")
+                    li
+                        a(href="#")
+                            i(class="fa fa-facebook" aria-hidden="true")
+                    li
+                        a(href="#")
+                            i(class="fa fa-twitter" aria-hidden="true")
+                    li
+                        a(href="#")
+                            i(class="fa fa-instagram" aria-hidden="true")
+            div(class="clearfix")
+    script(type="text/javascript" src="js/jquery-2.2.3.min.js")
+    script(type="text/javascript" src="js/main.js")
+    script(src="js/lightbox-plus-jquery.min.js")
+    script.
+        if ($(window).width() < 450) {
+           $('#nav-bar-wayra').removeClass("nav-is-visible");
+        }
+        else {
+           $('#nav-bar-wayra').addClass("nav-is-visible");
+        }
+        
+        $(window).on('resize', function(){
+            if ($(window).width() < 450) {
+               $('#nav-bar-wayra').removeClass("nav-is-visible");
+            }
+            else {
+               $('#nav-bar-wayra').addClass("nav-is-visible");
+            }
+        });
+    script(src="js/particles.js")
+    script(src="js/app.js")
+    link(href="css/owl.carousel.css" rel="stylesheet")
+    script(src="js/owl.carousel.js")
+    
+    script.
+        $(document).ready(function() {
+            $("#owl-demo").owlCarousel({
+            items : 1,
+            lazyLoad : true,
+            autoPlay : true,
+            navigation : false,
+            navigationText :  false,
+            pagination : true,
+            });
+        });
+        
+    script.
+        $(window).load(function() {
+            $("#flexiselDemo1").flexisel({
+                visibleItems: 4,
+                animationSpeed: 1000,
+                autoPlay: true,
+                autoPlaySpeed: 3000,    		
+                pauseOnHover: true,
+                enableResponsiveBreakpoints: true,
+                responsiveBreakpoints: { 
+                    portrait: { 
+                    changePoint:480,
+                    visibleItems: 1
+                    }, 
+                    landscape: { 
+                    changePoint:640,
+                    visibleItems:2
+                    },
+                    tablet: { 
+                    changePoint:768,
+                    visibleItems: 3
+                    }
+                }
+            });
+        });
+        
+    script(type="text/javascript" src="js/jquery.flexisel.js")
+    script(type="text/javascript" src="js/move-top.js")
+    script(type="text/javascript" src="js/easing.js")
+    
+    script.
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){		
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    
+    script(src="js/bootstrap.js")
+    
+    script.
+        $(document).ready(function() {
+        $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    
+    script.
+        $(document).ready(function () {
+            $(window).bind('scroll', function () {
+                if ($(window).scrollTop() > 350) {
+                    
+                    $('.header-bottom').fadeIn(200);
+                    $('.header-bottom-static').fadeOut(200);
+                    $('#nav-bar-wayra').removeClass("nav-is-visible");
+
+                } else {
+                    $('.header-bottom').fadeOut(200);
+                    $('.header-bottom-static').fadeIn(200);
+                     $('#nav-bar-wayra').addClass("nav-is-visible");
+                }
+            });
+        });
