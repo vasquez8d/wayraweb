@@ -2,8 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get("/", function(request,response){
-   response.writeHead(200, {"Content-Type": "text/plain"});
-   response.render("index")
+   response.send("Hola_Mundo_Wayra")
 });
 
 app.listen(8080);
