@@ -751,8 +751,9 @@ ul.about-agile li i {
     text-align: left;
 }
 .wthree-text p{
-	    margin: 1em 0;
-    line-height: 2em;
+    margin: 1em 0;
+    line-height: 1.3em;
+    font-size: 1.1em !important;
     text-align: left;
     color: #888;
 }
@@ -1207,7 +1208,6 @@ h3.tittle3 {
 .grid figure figcaption {
 	padding: 2em;
 	color: #fff;
-	text-transform: uppercase;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -1261,7 +1261,8 @@ h3.tittle3 {
 }
 .grid figure h3 span {
     font-weight: 800;
-	    color: #168eea;
+    color: #168eea;
+    font-size: 1.6em;
 }
 /*---------------*/
 /***** Roxy *****/
@@ -1297,8 +1298,8 @@ figure.effect-roxy figcaption::before {
 }
 
 figure.effect-roxy figcaption {
-    padding: 5em 2em;
-    text-align: center;
+    padding: 2em 2em;
+    text-align: left;
 }
 
 figure.effect-roxy h2 {
@@ -1356,7 +1357,7 @@ figure.effect-roxy:hover p {
 
 .w3_about_grid_left h6 {
   color: #168eea;
-    font-size: 1.2em;
+    font-size: 1.7em;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 3px;
@@ -1401,9 +1402,8 @@ figure.effect-roxy:hover p {
 .w3_about_grid_left p {
     color: #2f2e2e;
     line-height: 2em;
-    font-style: italic;
     margin: 1em 0;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 .pa_italic i {
     left: -1em;
@@ -1424,7 +1424,7 @@ figure.effect-roxy:hover p {
     padding:10px 35px;
 }
 .panel-title {
-    font-size: 1em;
+    font-size: 1.3em !important;
     color:#212121;
     text-transform: capitalize;
 	font-family: 'Open Sans', sans-serif;
@@ -1441,7 +1441,7 @@ figure.effect-roxy:hover p {
 }
 .panel-body {
     padding: 1.5em;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 2em;
     color: #888;
 }
@@ -1755,7 +1755,8 @@ textarea:focus{
       font-size: 2.3em;
 	}
 	.grid figure h3 {
-		font-size: 1.2em;
+		font-size: 0.9em;
+        letter-spacing: 2px;
 	}
 	.wthree-text {
 		padding: 3em 3em;
@@ -1847,6 +1848,7 @@ textarea:focus{
 	.wthree-text p {
 		margin: 1em 0;
 		line-height: 1.8em;
+        font-size: 1em;
 	}
 	.view-sixth:hover a.info {
 		letter-spacing: 1px;
@@ -1917,7 +1919,8 @@ textarea:focus{
 	}
 	.wthree-text p {
 		margin: 0.5em 0;
-		line-height: 2.2em;
+		line-height: 1.4em !important;
+        font-size: 0.9em !important;
 	}
 	ul.about-agile li {
 		display: block;
@@ -2324,7 +2327,7 @@ textarea:focus{
 		padding:8em 0 0;
 	}
 	.grid figure h3 {
-		font-size: 0.8em;
+		font-size: 0.55em;
 	}
 	.grid figure p {
 		letter-spacing: 2px;
@@ -2369,7 +2372,7 @@ textarea:focus{
 		width: 100%;
 	}
 	figure.effect-roxy figcaption {
-		padding: 7em 2em;
+		padding: 0.5em 2em;
 		text-align: center;
 	}
 	.contact-left {

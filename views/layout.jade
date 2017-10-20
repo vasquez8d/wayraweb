@@ -193,16 +193,27 @@ html(lang="en")
     script.
         $(document).ready(function () {
             $(window).bind('scroll', function () {
-                if ($(window).scrollTop() > 350) {
-                    
-                    $('.header-bottom').fadeIn(200);
-                    $('.header-bottom-static').fadeOut(200);
-                    $('#nav-bar-wayra').removeClass("nav-is-visible");
+                if ($(window).width() < 450) {
+                    if ($(window).scrollTop() > 100) {
+                        $('.header-bottom').fadeIn(200);
+                        $('.header-bottom-static').fadeOut(200);
 
-                } else {
-                    $('.header-bottom').fadeOut(200);
-                    $('.header-bottom-static').fadeIn(200);
-                     $('#nav-bar-wayra').addClass("nav-is-visible");
+                    } else {
+                        $('.header-bottom').fadeOut(200);
+                        $('.header-bottom-static').fadeIn(200);
+                    }
+                }
+                else {
+                    if ($(window).scrollTop() > 100) {
+                        $('.header-bottom').fadeIn(200);
+                        $('.header-bottom-static').fadeOut(200);
+                        $('#nav-bar-wayra').removeClass("nav-is-visible");
+
+                    } else {
+                        $('.header-bottom').fadeOut(200);
+                        $('.header-bottom-static').fadeIn(200);
+                        $('#nav-bar-wayra').addClass("nav-is-visible");
+                    }    
                 }
             });
         });
