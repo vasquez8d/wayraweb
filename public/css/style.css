@@ -10,6 +10,12 @@ html, body{
 	background:#ffffff;
 }
 
+.galeria_wayra
+{
+    font-size: 1.4em !important;
+    text-align: center !important;
+}
+
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
@@ -736,6 +742,7 @@ ul.about-agile li i {
 
 .agileits_works-grid {
     padding: 0;
+    background-color: rgba(135, 237, 162, 0.77);
 }
 
 .wthree-text {
@@ -755,7 +762,7 @@ ul.about-agile li i {
     line-height: 1.3em;
     font-size: 1.1em !important;
     text-align: left;
-    color: #888;
+    color: #000;
 }
 /*--//agileits_works--*/
 /*-- welcome --*/
@@ -1238,7 +1245,6 @@ h3.tittle3 {
 }
 
 .grid figure h3 {
-    word-spacing: -0.15em;
     font-weight: 300;
     margin: 0 0 .5em 0;
     font-size: 1.5em;
@@ -1735,6 +1741,7 @@ textarea:focus{
 	}
 	.gallery, #review {
 		padding-bottom: 4em;
+            background-color: #9acd91;
 	}
 	.welcome {
 		padding: 4em 0;
@@ -1755,8 +1762,8 @@ textarea:focus{
       font-size: 2.3em;
 	}
 	.grid figure h3 {
-		font-size: 0.9em;
-        letter-spacing: 2px;
+		font-size: 0.8em;
+        letter-spacing: 1px;
 	}
 	.wthree-text {
 		padding: 3em 3em;
@@ -2327,7 +2334,7 @@ textarea:focus{
 		padding:8em 0 0;
 	}
 	.grid figure h3 {
-		font-size: 0.55em;
+		font-size: 0.43em;
 	}
 	.grid figure p {
 		letter-spacing: 2px;
@@ -2429,7 +2436,7 @@ textarea:focus{
 		margin: 1em 0 0 0;
 	}
 	figure.effect-roxy figcaption {
-		padding: 6em 2em;
+		padding: 0.5em 2em;
 		text-align: center;
 	}
 	.w3agile_footer_grid h2 a {
