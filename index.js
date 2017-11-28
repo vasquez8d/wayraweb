@@ -31,7 +31,7 @@ app.get("/exhibiciones", function(request,response){
 app.get("/publicidad", function(request,response){
    response.render("service3")
 });
-var port = process.env.PORT || 1337;
+var port = process.env.PORT || 80;
 app.listen(port);
 
 console.log("Server running at http://localhost:%d", port);
