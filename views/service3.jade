@@ -1,0 +1,79 @@
+extends ././layout.jade
+block contenido
+    div(class="banner")
+        div(class="se-pre-con")
+        div(id="kb" class="carousel kb_elastic animate_text kb_wrapper" data-ride="carousel" data-interval="6000" data-pause="hover")
+                div(class="carousel-inner" role="listbox")
+                    div(class="item active")
+                        img(src="images/banner_servicios3.jpg" alt="" class="img-responsive")
+                        div(class="carousel-caption kb_caption kb_caption_center")
+                            h3(data-animation="animated flipInX")|Publicidad
+    .services
+      .container
+        .col-md-6.services-w3ls-left
+          h3.agileits-title La mejor opción
+          p
+            | También participamos de varias campañas publicitarias (fotografía), magazines semanales y programas de televisión a nivel nacional.
+          br
+          p
+            | Entre las aves más requeridas por el rubro publicitario, se encuentran nuestros búhos, águilas y gavilanes sumamente dóciles, entrenados exclusivamente para este particular.
+        .col-md-6.services-w3ls-row.agileits-w3layouts(style="margin-top:7% !important")
+          .col-md-6.col-xs-4.services-grid.agileits-w3layouts
+            i.fa.fa-eye(aria-hidden='true')
+            h5 Obten la atención del público
+          .col-md-6.col-xs-4.services-grid.agileits-w3layouts
+            i.fa.fa-picture-o(aria-hidden='true')
+            h5 Sesiones fotográficas
+          .col-md-6.col-xs-4.services-grid.srvs-wthree-mdl.agileits-w3layouts
+            i.fa.fa-star(aria-hidden='true')
+            h5 Animales entrenados por profesionales
+          .col-md-6.col-xs-4.services-grid.srvs-wthree-mdl
+            i.fa.fa-thumbs-up(aria-hidden='true')
+            h5 Diversidad de aves y animales exóticos
+          .clearfix  
+        .clearfix 
+        
+    #gallery.gallery(style="margin-top:-10% !important")
+      .w3_tittle.second.two
+        h3.agile-tittle.two.gal Presentaciones en el Castillo de Chancay
+        .line-style.second
+          span.second
+      .w3-agile-top-info
+        .col-md-4.gallery-grid
+          .grid
+            figure.effect-roxy.galeria_wayra
+              a.example-image-link(href='images/exhibicion_1.jpg', data-lightbox='example-set', data-title='Descrpción para la fotograía.')
+                img(src='images/exhibicion_1.jpg', alt='')
+                figcaption
+        .col-md-4.gallery-grid
+          .grid
+            figure.effect-roxy.galeria_wayra
+              a.example-image-link(href='images/exhibicion_2.jpg', data-lightbox='example-set', data-title='Descrpción para la fotograía.')
+                img(src='images/exhibicion_2.jpg', alt='')
+                figcaption
+        .col-md-4.gallery-grid
+          .grid
+            figure.effect-roxy.galeria_wayra
+              a.example-image-link(href='images/exhibicion_3.jpg', data-lightbox='example-set', data-title='Descrpción para la fotograía.')
+                img(src='images/exhibicion_3.jpg', alt='')
+                figcaption
+        .clearfix  
+    .services(style="margin-top:-10% !important")
+      .container
+        h3.agile-tittle.two.gal Otros Servicios Wayra Control
+        br
+        .col-md-12.services-w3ls-row.agileits-w3layouts
+          .col-md-4.col-xs-4.services-grid.agileits-w3layouts
+            a(href="/control-aviar")
+                i.fa.fa-leaf(aria-hidden='true')
+                h5 Control Aviar
+          .col-md-4.col-xs-4.services-grid.agileits-w3layouts
+            a(href="/exhibiciones")
+                i.fa.fa-star(aria-hidden='true')
+                h5 Exhibiciones de cetrería
+          .col-md-4.col-xs-4.services-grid.agileits-w3layouts
+            a(href="/publicidad")
+                i.fa.fa-picture-o(aria-hidden='true')
+                h5 Publicidad
+          .clearfix  
+        .clearfix 

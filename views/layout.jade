@@ -14,6 +14,7 @@ html(lang="en")
     link(href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css')
     link(rel="stylesheet" href="css/reset.css")
     link(rel="stylesheet" href="css/style_nav.css")
+    link(rel="stylesheet" href="css/style_s.css")
     script(src="js/modernizr.js")
   body
     block contenido
@@ -26,72 +27,108 @@ html(lang="en")
                     a(href="/")
                         span(class="nav-wayra")|Principal
                 li
-                    a(href="/servicios")
+                    a(href="/control-aviar")
                         span(class="nav-wayra")|Servicios
                 li
                     a(href="/galeria")
                         span(class="nav-wayra")|Galería
                 li
-                    a(href="/contact")
+                    a(href="/contacto")
                         span(class="nav-wayra")|Contácto
+                li
+                    a(href="/productos")
+                        span(class="nav-wayra")|Productos
             span(aria-hidden="true" class="stretchy-nav-bg")
     div(style="margin-top:-10px;" class="header-bottom-static")
         div(class="logo")
             a(class="navbar-brand" href="/")
-                img(class="img-responsive logo_wayra" src="images/logo.png")
+                img(class="img-responsive logo_wayra" width="250" height="250" src="images/logo.png")
     div(class="footer")
         div(class="container")
             div(class="col-md-3 w3agile_footer_grid")
                 h3|Wayra Control
-                p|Presentacion resumida para publico
+                h4|Wayra Control EIRL es una empresa inscrita en el RNP (Registro Nacional de Proveedores), homologada y certificada, conformada por profesionales reconocidos en el campo de la ornitología y biología, y maestros de la cetrería con una amplia trayectoria en el rubro del control de plagas aviares.
                 h2
                     a(href="/")|Página principal
-            div(class="col-md-2 w3agile_footer_grid")
+            div(class="col-md-3 w3agile_footer_grid")
                 h3|Páginas
                 ul
                     li
-                        a(href="/servicios")|Servicios
+                        h3
+                            i.fa.fa-arrow-circle-right(aria-hidden='true')
+                            |  
+                            a(href="/")|Principal
                     li
-                        a(href="/galeria")|Galería
+                        h3
+                            i.fa.fa-arrow-circle-right(aria-hidden='true')
+                            |  
+                            a(href="/control-aviar")|Servicios
                     li
-                        a(href="/contact")|Contáctanos
-            div(class="col-md-4 w3agile_footer_grid")
-                h3|Servicios
-                    h2
-                        a(href="index.html")|CONTROL AVIAR
-                    h2
-                        a(href="index.html")|EXHIBICIÓNES EN EVENTOS
-                    h2
-                        a(href="index.html")|ESPECTÁCULOS AVIARES
+                        h3
+                            i.fa.fa-arrow-circle-right(aria-hidden='true')
+                            |  
+                            a(href="/galeria")|Galería
+                    li
+                        h3
+                            i.fa.fa-arrow-circle-right(aria-hidden='true')
+                            |  
+                            a(href="/contacto")|Contáctanos
+                    li
+                        h3
+                            i.fa.fa-arrow-circle-right(aria-hidden='true')
+                            |  
+                            a(href="/productos")|Productos
             div(class="col-md-3 w3agile_footer_grid")
-                h3|GALERÍA
-                div(class="w3agile_footer_grid_left")
-                    a(href="#" data-toggle="modal" data-target="#myModal")
-                        img(src="images/g1.jpg" alt=" " class="img-responsive")
-                div(class="w3agile_footer_grid_left")
-                    a(href="#" data-toggle="modal" data-target="#myModal")
-                        img(src="images/g2.jpg" alt=" " class="img-responsive")
-                div(class="w3agile_footer_grid_left")
-                    a(href="#" data-toggle="modal" data-target="#myModal")
-                        img(src="images/g3.jpg" alt=" " class="img-responsive")
-                div(class="w3agile_footer_grid_left")
-                    a(href="#" data-toggle="modal" data-target="#myModal")
-                        img(src="images/g4.jpg" alt=" " class="img-responsive")
-                div(class="w3agile_footer_grid_left")
-                    a(href="#" data-toggle="modal" data-target="#myModal")
-                        img(src="images/g5.jpg" alt=" " class="img-responsive")
-                div(class="w3agile_footer_grid_left")
-                    a(href="#" data-toggle="modal" data-target="#myModal")
-                        img(src="images/g1.jpg" alt=" " class="img-responsive")
-                div(class="w3agile_footer_grid_left")
-                    a(href="#" data-toggle="modal" data-target="#myModal")
-                        img(src="images/g2.jpg" alt=" " class="img-responsive")
-                div(class="w3agile_footer_grid_left")
-                    a(href="#" data-toggle="modal" data-target="#myModal")
-                        img(src="images/g3.jpg" alt=" " class="img-responsive")
-                div(class="w3agile_footer_grid_left")
-                    a(href="#" data-toggle="modal" data-target="#myModal")
-                        img(src="images/g4.jpg" alt=" " class="img-responsive")
+                h3|SERVICIOS
+                ul
+                    li
+                        h3
+                            i.fa.fa-arrow-circle-right(aria-hidden='true')
+                            |  
+                            a(href="/control-aviar")|Control aviar
+                    li
+                        h3
+                            i.fa.fa-arrow-circle-right(aria-hidden='true')
+                            |  
+                            a(href="/exhibiciones")|Exhibiciones de cetrería
+                    li
+                        h3
+                            i.fa.fa-arrow-circle-right(aria-hidden='true')
+                            |  
+                            a(href="/publicidad")|Publicidad
+            div(class="col-md-3 w3agile_footer_grid")
+                h3|INFORMACIÓN DE CONTACTO
+                ul
+                    li
+                        h4
+                            i.fa.fa-phone-square(aria-hidden='true')
+                            |  
+                            a  932 995 997
+                    li
+                        h4
+                            i.fa.fa-phone-square(aria-hidden='true')
+                            |  
+                            a  932 995 997
+                    li
+                        h4
+                            i.fa.fa-envelope(aria-hidden='true')
+                            |  
+                            a(href="mailto:jposadas@wayracontrol.com?Subject=Información")| jposadas@wayracontrol.com
+                    li
+                        h4
+                            i.fa.fa-envelope(aria-hidden='true')
+                            |  
+                            a(href="mailto:jposadas@wayracontrol.com?Subject=Información")| jposadas@wayracontrol.com
+                    li
+                        h4
+                            i.fa.fa-envelope(aria-hidden='true')
+                            |  
+                            a(href="mailto:jposadas@wayracontrol.com?Subject=Información")| jposadas@wayracontrol.com
+                    li
+                        h4
+                            i.fa.fa-arrow-circle-right(aria-hidden='true')
+                            |  
+                            a(href="/contacto")|Enviar mensaje de Contácto
     div(class="agileinfo_copy_right")
         div(class="container")
             div(class="agileinfo_copy_right_left")

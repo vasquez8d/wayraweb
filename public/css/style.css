@@ -932,7 +932,7 @@ canvas.particles-js-canvas-el{
     text-align: center;
 }
 .services {
-    background: url(../images/banner1.jpg)no-repeat 0px 0px;
+    background: rgb(154, 205, 145);
     margin: 0 auto;
     text-align: center;
 	position:relative;
@@ -1186,6 +1186,7 @@ h3.tittle3 {
 /*-- gallery --*/
 .gallery,#review {
     padding-bottom: 5em;
+    background-color: #9acd91;
 }
 .grid {
 	position: relative;
@@ -1432,7 +1433,6 @@ figure.effect-roxy:hover p {
 .panel-title {
     font-size: 1.3em !important;
     color:#212121;
-    text-transform: capitalize;
 	font-family: 'Open Sans', sans-serif;
 	text-decoration: none;
 }
@@ -1618,7 +1618,7 @@ div#contact h3 {
 .contact-middle input[type="text"], .contact-middle input[type="email"], textarea {
     width: 100%;
     padding: 7px 10px;
-    font-size: 15px;
+    font-size: 20px;
     border: none;
     background: transparent;
     border: 0.5px solid #fff;
