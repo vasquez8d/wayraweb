@@ -224,7 +224,27 @@ html(lang="en")
         $(document).ready(function() {
         $().UItoTop({ easingType: 'easeOutQuart' });
         });
-    
+    script.
+          $('#btnEnviar').click(function(){
+            var nombre = $('#name').val();
+            var correo = $('#mail').val();
+            var mensaje = $('#mensaje').val();
+            $.ajax({
+                url: "/sendmail",
+                type: "get", //send it through get method
+                data: { 
+                  nombre: nombre, 
+                  correo: correo, 
+                  mensaje: mensaje
+                },
+                success: function(response) {
+                  window.location.href = "/rptamail";
+                },
+                error: function(xhr) {
+                  //Do Something to handle error
+                }
+            });
+          });
     script.
         $(document).ready(function () {
             $(window).bind('scroll', function () {

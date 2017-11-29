@@ -24,14 +24,13 @@ block contenido
                 p|+(051) 939 086 646
             div(class="contact-middle")
                 h4|Escríbenos
-                form(action="#" method="post")
                     div(class="form-agileinfo")
                         p|Nombres
-                        input(type="text" name="your name" placeholder="Tú nombre" required="")
+                        input(type="text" id="name" name="your name" placeholder="Tú nombre" required="")
                         p|Correo Electrónico
-                        input(type="email" name="your email" placeholder="example@dominio.com" required="")
+                        input(type="email" id="mail" name="your email" placeholder="example@dominio.com" required="")
                     div(class="form-agileits-w3layouts")
                         p|Mensaje
-                        textarea(name="your message" placeholder="Tú mensaje" required="")
-                        input(type="submit"   value="Enviar Mensaje")
+                        textarea(name="your message" id="mensaje" placeholder="Tú mensaje" required="")
+                        input(type="submit" id="btnEnviar" value="Enviar Mensaje")
                     div(class="clearfix")

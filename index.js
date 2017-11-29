@@ -31,7 +31,18 @@ app.get("/exhibiciones", function(request,response){
 app.get("/publicidad", function(request,response){
    response.render("service3")
 });
+
+app.get("/rptamail", function(request,response){
+   response.render("mail")
+});
+
+var mail = require('./mail.js');
+
+app.use("/sendmail", mail);
+
 var port = process.env.PORT || 1337;
 app.listen(port);
+
+module.exports = app;
 
 console.log("Server running at http://localhost:%d", port);
