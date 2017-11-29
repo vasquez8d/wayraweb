@@ -40,7 +40,7 @@ var mail = require('./mail.js');
 
 app.use("/sendmail", mail);
 
-var port = process.env.PORT || 80;
+var port = process.env.PORT || 3000;
 app.listen(port);
 
 module.exports = app;
