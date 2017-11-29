@@ -19,7 +19,7 @@ route.get("/", function(request, response){
   console.log(fecha);
   var mailOptions = {
     from: 'wayracontrol.web@gmail.com',
-    to: 'vasquez8d@gmail.com',
+    to: 'jposadas@wayracontrol.com',
     subject: 'Nuevo mensaje ingresado a la página web ' + fecha.getDate() +
              '/' + (fecha.getMonth() + 1) + '/' + fecha.getFullYear(),
     html: 'Mail enviado por : ' + pName + '<br/>' +

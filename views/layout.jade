@@ -103,17 +103,17 @@ html(lang="en")
                         h4
                             i.fa.fa-phone-square(aria-hidden='true')
                             |  
-                            a  943 547 748
+                            a  Oficina : 01-4179068
                     li
                         h4
                             i.fa.fa-phone-square(aria-hidden='true')
                             |  
-                            a  939 086 646
+                            a  Celular : 943 547 748
                     li
                         h4
                             i.fa.fa-phone-square(aria-hidden='true')
                             |  
-                            a  01-4179068
+                            a  Celular : 939 086 646
                     li
                         h4
                             a(href="mailto:cotizaciones@wayracontrol.com?Subject=Información")| cotizaciones@wayracontrol.com
@@ -226,24 +226,33 @@ html(lang="en")
         });
     script.
           $('#btnEnviar').click(function(){
+            
             var nombre = $('#name').val();
             var correo = $('#mail').val();
             var mensaje = $('#mensaje').val();
-            $.ajax({
-                url: "/sendmail",
-                type: "get", //send it through get method
-                data: { 
-                  nombre: nombre, 
-                  correo: correo, 
-                  mensaje: mensaje
-                },
-                success: function(response) {
-                  window.location.href = "/rptamail";
-                },
-                error: function(xhr) {
-                  //Do Something to handle error
-                }
-            });
+            
+            if (nombre.trim() == "" || correo.trim() == "" || mensaje.trim() == "")
+            {
+              $('#falta_info').show(500);
+            }
+            else
+            {
+                $.ajax({
+                    url: "/sendmail",
+                    type: "get", //send it through get method
+                    data: { 
+                      nombre: nombre, 
+                      correo: correo, 
+                      mensaje: mensaje
+                    },
+                    success: function(response) {
+                      window.location.href = "/rptamail";
+                    },
+                    error: function(xhr) {
+                      window.location.href = "/rptamail";
+                    }
+                });
+            }
           });
     script.
         $(document).ready(function () {
