@@ -1,5 +1,5 @@
-let express = require('express');
-let route = express.Router();
+var express = require('express');
+var route = express.Router();
 var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
